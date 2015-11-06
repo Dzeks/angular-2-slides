@@ -1,0 +1,27 @@
+[
+    "index.html",
+    "primitives.html",
+    [
+        "template/templates.html",
+        "template/templates-1-x.html",
+        "template/templates-2-x.html",
+        "template/properties-binding.html",
+        "template/events-binding.html",
+        "template/local-variables.html"
+    ],
+    "still-a-js-framework.html",
+    [
+        "annotations/annotations.html",
+        "annotations/annotations-1.html",
+        "annotations/angular-annotations.html",
+        "annotations/component-annotation.html"
+    ],
+    [
+        "observables/observables.html",
+        "observables/observable-http.html",
+        "observables/observable-events.html",
+        "observables/observable-properties.html",
+        "observables/observable-query.html"
+    ],
+    "routing.html"
+]

@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Angular 2.0 ",
+    "packageVersion": "0.0.0",
+    "revealTheme": "white",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "Dzeks",
+    "githubRepository": "angular-2-slides"
+  }
+}

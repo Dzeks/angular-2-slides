@@ -1,0 +1,30 @@
+<h2>Under the hood</h2>
+
+<div class="present">
+    <div class="fragment">
+
+        <pre><code data-trim>
+@Injectable()
+class PageController{
+    constructor(http: Http){
+        this.http = http;
+    }
+}
+        </code></pre>
+
+    </div>
+    <div class="fragment">
+
+<pre><code data-trim>
+function PageController($http) {
+    this.http = http;
+}
+PageController = __decorate([
+    angular2_1.Injectable(),
+    __metadata('design:paramtypes', [Http])
+], PageController);
+return PageController;
+</code></pre>
+
+    </div>
+</div>

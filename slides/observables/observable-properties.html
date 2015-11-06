@@ -1,0 +1,20 @@
+<h2>Observable properties</h2>
+
+<div class="preset">
+    <div class="fragment">
+<pre><code data-trim>
+@Component({
+    selector: 'fire-button',
+    template: 'fire text: {{fireText}}'
+})
+class FireCmp{
+    @Input() fireText: string;
+}
+</code></pre>
+    </div>
+    <div class="fragment">
+<pre><code data-trim>
+<fire-button [fire-text]="textProp"></fire-button>
+</code></pre>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<h2>Local variables</h2>
+
+<div class="present">
+    <div class="fragment">
+        <pre><code data-trim>
+<div ng-repeat="item in collection">
+    {{item.name}}
+</div>
+        </code></pre>
+    </div>
+    <div class="fragment">
+        <pre><code data-trim>
+<div *ng-for="#item of collection">
+    {{item.name}}
+</div>
+        </code></pre>
+    </div>
+    <div class="fragment">
+        <pre><code data-trim>
+<google-youtube #player></google-youtube>
+<button (click)="player.play()">Play</button>
+        </code></pre>
+    </div>
+</div>

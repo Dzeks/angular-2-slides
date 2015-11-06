@@ -1,0 +1,20 @@
+<h2>Observable Events</h2>
+
+<div class="preset">
+    <div class="fragment">
+<pre><code data-trim>
+@Component({selector: 'fire-button'})
+class TodoCmp {
+    @Output() fire = new EventEmitter();
+    onFireButton() {
+        this.fire.next();
+    }
+}
+</code></pre>
+    </div>
+    <div class="fragment">
+<pre><code data-trim>
+<fire-button (fire)="onFire()"></fire-button>
+</code></pre>
+    </div>
+</div>

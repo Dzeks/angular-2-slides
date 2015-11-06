@@ -1,0 +1,26 @@
+<h2>Observable Query</h2>
+
+<div class="present">
+    <div class="fragment">
+<pre><code data-trim>
+<tabs>
+    <tab *ng-for="#tab of tabs"></tab>
+</tabs>
+</code></pre>
+    </div>
+    <div class="fragment">
+<pre><code data-trim>
+@Component({
+    selector: 'tabs',
+    templateUrl: 'someTemplate',
+    directives: [Tab]
+})
+class Tabs{
+    @ViewChildren(Tab) children: QueryList<Tab>;
+    construct() {
+        this.children.onChange((items) => this.total = items.length);
+    }
+}
+</code></pre>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<h2>Properties binding</h2>
+
+<div class="present">
+    <div class="fragment">
+        <pre><code data-trim>
+            <img src="{{imageUrl}}">
+        </code></pre>
+
+        <p>Attributes are defined by HTML.</p>
+        <p>Properties are defined by DOM</p>
+        <!-- The HTML attribute value specifies the initial value; the DOM value property is the current value. -->
+    </div>
+    <div class="fragment">
+        <pre><code data-trim>
+            <img [src]="imageUrl">
+        </code></pre>
+    </div>
+    <div class="fragment">
+        <pre><code data-trim>
+            <input type="text" [disabled]="isDisabled">
+        </code></pre>
+    </div>
+    <div class="fragment">
+        <pre><code data-trim>
+            <span [class.primary]="isPrimary"></span>
+        </code></pre>
+    </div>
+</div>

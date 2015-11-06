@@ -1,0 +1,19 @@
+<h2>Events binding</h2>
+
+<div class="present">
+    <div class="fragment">
+        <pre><code data-trim>
+            <button (click)="callMethod($event)"></button>
+        </code></pre>
+    </div>
+    <div class="fragment">
+        <p>Any triggered event including child events</p>
+        <pre><code data-trim>
+            <button (keydown.space)="callMethod($event)"></button>
+        </code></pre>
+    </div>
+    <div class="fragment">
+        <a href="https://github.com/angular/angular/issues/4923">Upcoming change</a>
+    </div>
+
+</div>

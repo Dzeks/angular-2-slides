@@ -1,0 +1,28 @@
+<h2>Routing</h2>
+
+<div class="present">
+    <div class="fragment">
+        <pre><code data-trim>
+@Component({selector: 'app', templateUrl: "app.html"})
+@RouteConfig([
+    new Route({path: '/', component: DashboardPage, name: 'Dashboard'}),
+    new Route({path: '/about', component: AboutCmp, name: 'About'}),
+    new Route({path: '/detail/:id', component: DetailCmp, name: 'Detail'})
+])
+export class InboxApp {}
+        </code></pre>
+    </div>
+    <div class="fragment">
+        <pre><code data-trim>
+@Component({selector: 'detail', templateUrl: "detail.html"})
+class DetailCmp {
+    id: sting;
+
+    constructor(params: RouteParams) {
+        this.id = params.get('id');
+    }
+}
+        </code></pre>
+    </div>
+
+</div>
