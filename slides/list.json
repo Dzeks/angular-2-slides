@@ -23,5 +23,7 @@
         "observables/observable-properties.html",
         "observables/observable-query.html"
     ],
-    "routing.html"
+    "routing.html",
+    "much-more.html",
+    "the-end.html"
 ]

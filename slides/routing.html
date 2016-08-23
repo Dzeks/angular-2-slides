@@ -17,12 +17,25 @@ export class InboxApp {}
 @Component({selector: 'detail', templateUrl: "detail.html"})
 class DetailCmp {
     id: sting;
-
     constructor(params: RouteParams) {
         this.id = params.get('id');
     }
 }
         </code></pre>
     </div>
-
+    <div class="fragment">
+        <pre><code data-trim>
+<a [router-link]="['/About']">Inbox</a>
+<router-outlet></router-outlet>
+        </code></pre>
+    </div>
+    <div class="fragment">
+        <pre><code data-trim>
+<ul>
+<li *ng-for="#person of persons">
+    <a [router-link]="[ '/Detail', { id: person.id } ]">{{person.name}}</a>
+</li>
+</ul>
+        </code></pre>
+    </div>
 </div>
